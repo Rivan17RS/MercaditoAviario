@@ -1,0 +1,60 @@
+﻿
+@{
+    ViewBag.Title = "Offers";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script src="~/Scripts/Views/Offers.js"></script>
+
+<h2>Ofertas</h2>
+
+<div class="form-group">
+    <button id="btnCreateOffer" class="btn btn-success" type="button">Crear Oferta</button>
+</div>
+
+<div>
+    <table id="tblOffers" class="display" syle="width:100%">
+        <thead>
+            <tr>
+                <th>Id Oferta</th>
+                <th>Producto</th>
+                <th>Descripción</th>
+                <th>Cantidad</th>
+                <th>Precio</th>
+                <th>Vendedor</th>
+            </tr>
+        </thead>
+    </table>
+
+    <!--Formulario para mostrar datos de la lista-->
+    <form id="frmOffers">
+        <h2>Datos de la Oferta</h2>
+
+        <div>
+            <lable for="txtId">Product:</lable>
+            <input id="txtId" type="text" class="form-control" ColumnDataName="Product" />
+        </div>
+
+        <div>
+            <lable for="txtProduct">Identificador:</lable>
+            <input id="txtProduct" type="text" class="form-control" ColumnDataName="Id" />
+        </div>
+
+        <div>
+            <lable for="txtDescription">Descriptor:</lable>
+            <textarea rows="3" id="txtDescription" type="text" class="form-control" ColumnDataName="Description"></textarea>
+        </div>
+
+        <div>
+            <lable for="txtQuantity">Cantidad:</lable>
+            <input id="txtQuantity" type="number" class="form-control" ColumnDataName="Quantity" />
+        </div>
+
+        <div>
+            <lable for="txtPrice">Precio:</lable>
+            <input id="txtPrice" type="number" class="form-control" ColumnDataName="Price" />
+        </div>
+
+    </form>
+
+</div>
+

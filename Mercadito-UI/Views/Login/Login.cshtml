@@ -1,0 +1,41 @@
+﻿@model DTO.User
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_Layout - NoMenu.cshtml";
+}
+
+
+
+@using (Html.BeginForm("Login", "Login", FormMethod.Post))
+{
+    <h2>Login - MercaditoAviario</h2>
+
+    <div>
+
+        @if (ViewBag.Message != null) 
+        {
+            <div style="color: orangered">@ViewBag.Message</div>
+        }
+
+    </div>
+
+    <table>
+        <tr>
+            <td>@Html.LabelFor(u => u.UserId, "User Name: ")</td>
+            <td>@Html.TextBoxFor(u => u.UserId)</td>
+        </tr>
+        <tr>
+            <td>@Html.LabelFor(u => u.Password, "Password: ")</td>
+            <td>@Html.PasswordFor(u => u.Password)</td>
+        </tr>
+        <tr>
+            <td>
+                <button id="btnLogin" type="submit" class="btn btn-success">Login</button>
+                @Html.ActionLink("Cancel","Cancel","Login", new {@class= "btn btn-success" })
+            </td>
+
+        </tr>
+
+    </table>
+}
+

@@ -1,0 +1,54 @@
+﻿
+@{
+    ViewBag.Title = "CreateOffer";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Crear Oferta</h2>
+<script src="~/Scripts/Views/CreateOffer.js"></script>
+
+<div class="form-group">
+
+    <!--Formulario para mostrar datos de la lista-->
+    <form id="frmOffers">
+
+
+
+
+        <div>
+            <lable for="txtId">Identificador:</lable>
+            <input id="txtId" type="text" class="form-control" ColumnDataName="Id" />
+        </div>
+
+        <div>
+            <lable for="txtProduct">Producto:</lable>
+            <input id="txtProduct" type="text" class="form-control" ColumnDataName="Product" />
+        </div>
+
+
+        <div>
+            <lable for="txtDescription">Descriptor:</lable>
+            <textarea rows="3" id="txtDescription" type="text" class="form-control" ColumnDataName="Description"></textarea>
+        </div>
+
+
+        <div>
+            <lable for="txtQuantity">Cantidad:</lable>
+            <input id="txtQuantity" type="number" class="form-control" ColumnDataName="Quantity" />
+        </div>
+
+
+        <div>
+            <lable for="txtPrice">Precio:</lable>
+            <input id="txtPrice" type="number" class="form-control" ColumnDataName="Price" />
+        </div>
+
+
+        <div class="form-group">
+            <button type="button" class="btn btn-success" id="btnCreateOffer">Enviar</button>
+            <button type="reset" class="btn btn-info" id="btnReset">Limpiar</button>
+        </div>
+
+    </form>
+
+</div>

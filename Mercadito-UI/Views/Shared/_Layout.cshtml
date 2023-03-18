@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <script src="~/Scripts/jquery-3.4.1.js"></script>
+    <script src="~/Scripts/Views/ActionsControl.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/v/bs5/dt-1.12.1/b-2.2.3/datatables.min.js"></script>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" title="more options">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("MercaditoAviario", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Inicio", "Index", "Home")</li>
+                    <li>@Html.ActionLink("Nosotros", "About", "Home")</li>
+                    <li>@Html.ActionLink("Contacto", "Contact", "Home")</li>
+
+                    <!--
+        <li>@Html.ActionLink("Offers", "Offers", "Offer")</li>
+        <li>@Html.ActionLink("Pedidos", "Purchases", "Purchase")</li>
+    -->
+                    <!--Esconde opciones en el menu condicionado por login activo-->
+                    @if (Session["user"] != null)
+                    {
+                        <li>@Html.ActionLink("Pedidos", "Purchases", "Purchase")</li>
+                        <li>@Html.ActionLink("Ofertas", "Offers", "Offer")</li>
+                    }
+                </ul>
+
+                <!--Controlar login session, se puede direcconar con session.role-->
+
+                <ul style="text-align: right">
+                    @if (Session["user"] == null)
+                    {
+                        <li>@Html.ActionLink("Iniciar Sesion", "Login", "Login")</li>
+                    }
+                    else
+                    {
+                        var user = "Bienvenido: " + Session["user"];
+                        <li style="color: white">@user</li>
+                        <li>@Html.ActionLink("Cerrar Sesion", "Logout", "Login", null, new { @style = "color:white" })</li>
+                    }
+
+                </ul>
+
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - MercaditoAviario - Ucenfotec</p>
+        </footer>
+    </div>
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css" />
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

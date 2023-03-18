@@ -83,3 +83,14 @@ D:\Cenfotec\Proyecto 2.1\Tecnicas\MercaditoAviario\ProjectoAgroIvanRojas\obj\Deb
 D:\Cenfotec\Proyecto 2.1\Tecnicas\MercaditoAviario\ProjectoAgroIvanRojas\obj\Debug\ProjectoAgroIvanRojas.csproj.CopyComplete
 D:\Cenfotec\Proyecto 2.1\Tecnicas\MercaditoAviario\ProjectoAgroIvanRojas\obj\Debug\ProjectoAgroIvanRojas.dll
 D:\Cenfotec\Proyecto 2.1\Tecnicas\MercaditoAviario\ProjectoAgroIvanRojas\obj\Debug\ProjectoAgroIvanRojas.pdb
+D:\Cenfotec\Proyecto 2.1\Tecnicas\MercaditoAviario\ProjectoAgroIvanRojas\bin\AppLogic.dll
+D:\Cenfotec\Proyecto 2.1\Tecnicas\MercaditoAviario\ProjectoAgroIvanRojas\bin\DTO.dll
+D:\Cenfotec\Proyecto 2.1\Tecnicas\MercaditoAviario\ProjectoAgroIvanRojas\bin\AppLogic.pdb
+D:\Cenfotec\Proyecto 2.1\Tecnicas\MercaditoAviario\ProjectoAgroIvanRojas\bin\DTO.pdb
+D:\Cenfotec\Proyecto 2.1\Tecnicas\MercaditoAviario\ProjectoAgroIvanRojas\bin\DataAccess.dll
+D:\Cenfotec\Proyecto 2.1\Tecnicas\MercaditoAviario\ProjectoAgroIvanRojas\bin\DataAccess.pdb
+D:\Cenfotec\Proyecto 2.1\Tecnicas\MercaditoAviario\ProjectoAgroIvanRojas\bin\Swashbuckle.Core.dll
+D:\Cenfotec\Proyecto 2.1\Tecnicas\MercaditoAviario\ProjectoAgroIvanRojas\bin\WebActivatorEx.dll
+D:\Cenfotec\Proyecto 2.1\Tecnicas\MercaditoAviario\ProjectoAgroIvanRojas\bin\System.Web.Cors.dll
+D:\Cenfotec\Proyecto 2.1\Tecnicas\MercaditoAviario\ProjectoAgroIvanRojas\bin\System.Web.Http.Cors.dll
+D:\Cenfotec\Proyecto 2.1\Tecnicas\MercaditoAviario\ProjectoAgroIvanRojas\bin\System.Web.Http.Cors.xml
